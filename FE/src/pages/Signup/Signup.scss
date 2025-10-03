@@ -1,0 +1,16 @@
+@import "../../style/abstracts/_variables.scss";
+.signup {
+    margin: -10px 0px;
+}
+.signup-divider {
+    margin: 10px;
+    span {
+        margin: 0 auto;
+    }
+}
+.send-otp {
+    cursor: pointer;
+    &:hover {
+        color: $primary-color;
+    }
+}

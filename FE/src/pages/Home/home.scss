@@ -1,0 +1,103 @@
+@import "../../style/abstracts/_variables";
+
+.nav {
+  height: 90px;
+  background-color: $primary-color;
+  img {
+    width: 150px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  .info {
+    display: flex;
+    margin-left: auto;
+    gap: 60px;
+
+    .link {
+      color: white;
+      position: absolute;
+      right: 400px;
+      top: 30px;
+      a {
+        margin: 0 20px;
+        font-size: 20px;
+      }
+    }
+    .group-btn {
+      position: relative;
+      button {
+        border: 2px solid white;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-weight: 600;
+        min-width: 100px;
+        font-size: 15px;
+      }
+      .btn-signup {
+        background-color: $primary-color;
+        color: white;
+        margin: 0 10px;
+        cursor: pointer;
+        transition: 300ms;
+        &:hover {
+          background-color: #143bd7;
+        }
+      }
+      .btn-login {
+        background-color: #e35b00;
+        color: white;
+        cursor: pointer;
+        transition: 300ms;
+        &:hover {
+          background-color: #913b02;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  height: 90vh;
+  .content {
+    display: flex;
+    .intro {
+      width: calc((100vw - 200px) / 2);
+    }
+    .title {
+      color: #3d5ee1;
+      font-size: 45px;
+      font-weight: 600;
+      margin-top: 200px;
+    }
+    .sub-title {
+      color: #3d5ee1;
+      font-size: 25px;
+    }
+    img {
+      margin-left: 100px;
+    }
+  }
+}
+
+.aboutme {
+  height: 400px;
+  background-color: $primary-color;
+}
+.height-button {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+.contact {
+  height: 400px;
+  background-color: #fff;
+  button {
+    background-color: $primary-color;
+    color: #fff;
+  }
+}

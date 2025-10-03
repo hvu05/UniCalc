@@ -1,0 +1,63 @@
+@import '../../style/abstracts/variables';
+
+.dashboard-component {
+  display: flex;
+
+  &__card {
+    display: flex;
+    background-color: $background-home;
+    margin: 20px 20px;
+    flex: 1;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    // Hover card tổng thể
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .content-img {
+      padding: 20px 0px 10px 20px;
+      flex: 1;
+
+      img {
+        width: 60%;
+        transition: transform 0.3s ease;
+
+        // Hover ảnh scale nhẹ
+        &:hover {
+          transform: scale(1.08);
+        }
+      }
+    }
+
+    .content-card {
+      flex: 1;
+      padding: 15px 0 0 30px;
+
+      p {
+        color: #777777;
+        margin: 0;
+        transition: color 0.3s ease;
+
+        // Hover text đổi màu
+        .dashboard-component__card:hover & {
+          color: darken(#777777, 20%);
+        }
+      }
+
+      div {
+        font-weight: 700;
+        font-size: 20px;
+        transition: color 0.3s ease;
+
+        // Hover highlight title
+        .dashboard-component__card:hover & {
+          color: $button-color;
+        }
+      }
+    }
+  }
+}

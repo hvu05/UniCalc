@@ -1,0 +1,45 @@
+.btn-homepage {
+    display: inline-block;
+    padding: 13px 300px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    border: none;
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.login-google {
+  box-shadow: 3px 3px 20px 4px rgba(0,0,0,0.3);
+  background-color: white;
+  display: flex;
+  align-items: center;   // căn giữa icon và text theo chiều dọc
+  justify-content: center; // căn giữa nội dung
+  gap: 10px;             // khoảng cách giữa icon và text
+  border: none;
+  border-radius: 10px;
+  // width: 600px;
+  height: 60px;
+  cursor: pointer;
+
+  .google-icon {
+    width: auto;        // chỉnh kích thước icon
+    height: 24px;
+    object-fit: contain;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .g {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+}
+
+.google-container {
+  display: flex;
+  justify-content: center;
+}

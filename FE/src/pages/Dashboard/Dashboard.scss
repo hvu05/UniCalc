@@ -1,0 +1,94 @@
+@import "../../style/abstracts/_variables.scss";
+
+.dashboard {
+  background-color: $background;
+  display: flex;
+  padding: 20px 20px;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  &.open .sidebar {
+    background-color: $button-color;
+    // width: 900px;
+    min-height: 87vh;
+    margin: 0 40px 10px 0;
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    padding: 20px 20px;
+    flex: 1;
+    position: relative;
+    // top: 20px;
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0 40px 0;
+    }
+  }
+  .item-logout {
+    position: fixed;
+    bottom: 10px;
+    color: white;
+    background-color: black;
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+  &.closed .sidebar {
+    width: 0;
+    margin-right: 0;
+    transition: all 0.4s ease;
+    overflow: hidden;
+
+    .item-logout {
+      position: absolute;
+      bottom: 0px;
+      color: white;
+      background-color: $background-dashboard;
+      padding: 10px 10px;
+      border-radius: 10px;
+    }
+  }
+
+  .sidebar {
+    &__item {
+      margin: 10px 0;
+
+      .item {
+        margin: 20px 0;
+        color: white;
+        transition: all 0.4s ease;
+
+        i {
+          margin: 0 5px 0 0;
+        }
+
+        &.item-active {
+          background-color: white;
+          color: black;
+          padding: 10px 10px;
+          border-radius: 10px;
+        }
+        cursor: pointer;
+      }
+    }
+  }
+  .main {
+    // flex-grow: 1;
+    transition: all 0.3s ease;
+    flex: 5;
+    .header-main {
+      display: flex;
+      justify-content: space-between;
+    }
+    .button-control {
+      background-color: white;
+      border: none;
+      padding: 10px 14px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      cursor: pointer;
+      &.avt {
+        font-size: 20px;
+        padding: 3px 10px;
+      }
+    }
+  }
+}
