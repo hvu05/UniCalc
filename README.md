@@ -91,21 +91,7 @@ cal-be-fe/
    npm install
    ```
 
-3. **Environment Configuration**
-   Create a `.env` file in the backend directory:
-   ```env
-   MONGODB_URI=your_mongodb_connection_string
-   JWT_ACCESS_KEY=your_jwt_secret_key
-   SESSION_SECRET=your_session_secret
-   FE_URL=http://localhost:3000
-   PORT=5000
-   BACKEND_URL=http://localhost:5000
-   GOOGLE_CLIENT_ID=your_google_client_id
-   GOOGLE_CLIENT_SECRET=your_google_client_secret
-   API_KEY_SEPAY=your_sepay_api_key
-   ```
-
-4. **Start the server**
+3. **Start the server**
    ```bash
    npm start
    ```
@@ -122,41 +108,10 @@ cal-be-fe/
    npm install
    ```
 
-3. **Environment Configuration**
-   Create a `.env` file in the frontend directory:
-   ```env
-   REACT_APP_BACKEND_URL=http://localhost:5000
-   BACKEND_URL=http://localhost:5000
-   ```
-
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm start
    ```
-
-## API Endpoints
-
-### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
-- `POST /api/auth/logout` - User logout
-- `GET /auth/google` - Google OAuth
-
-### Subjects & Grades
-- `POST /subject` - Create new subject
-- `POST /grade` - Add grade for subject
-- `GET /grade` - Get all grades for user
-- `PUT /grade/:id` - Update grade
-- `DELETE /grade/:id` - Delete grade
-
-### Semesters
-- `POST /semester` - Create new semester
-- `GET /semester` - Get user's semesters
-- `DELETE /semester/:id` - Delete semester
-
-### Payment
-- `POST /api/payment/callback` - SePay webhook
-
 ## Key Features Explained
 
 ### GPA Calculation System
